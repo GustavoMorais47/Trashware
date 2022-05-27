@@ -14,3 +14,20 @@ header #itemMenu:active{
     color: #16a637;
     border-bottom:#16a637 1px solid;
 }
+header .categorias{
+    background-color: #095d40;
+    color: #fff;
+}
+header .categorias li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+header .categorias li:hover{
+background-color: #16a637;
+}
