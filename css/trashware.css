@@ -28,6 +28,7 @@ header .categorias div{
 header .categorias ul{
     padding-left: 32px;
     padding-right: 32px;
+    margin-bottom: 0px;
 }
 header .categorias li{
     padding-top: 10px;
