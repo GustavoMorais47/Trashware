@@ -1,5 +1,12 @@
-
 /*===============Cabeçalho================*/
+header .logo{
+    width: 120px;
+    height: 69px; 
+    transition: transform 1s;
+}
+header .logo:hover{
+    transform: scale(1.05);
+}
 header #itemMenu{
     color: #095d40;
 }
