@@ -182,6 +182,7 @@ form input{
 .second-content .first-column{
     order: 2;
     z-index: -1;
+    padding-bottom: 15px;
 }
 .second-content .second-column{
     order: 1;
@@ -221,41 +222,53 @@ form input{
     z-index: 12;
 }
 
-.sign-up-js .first-content .second-column{
-    z-index: 11;
-}
-.sign-up-js .first-content .first-column{
-    z-index: 13;
-}
+/*Criar conta - desaparece*/
 .sign-in-js .first-content .second-column{
-    z-index: -1;
     position: relative;
     animation: deslocacao-in 2.5s;
+    z-index: -1;
 }
-
+/*Entrar - desaparece*/
 .sign-in-js .first-content .first-column{
     position: relative;
     animation: deslocacao-in-4 2.5s;
 }
+/*Novo por aqui - aparece*/
 .sign-in-js .second-content .first-column{
-    z-index: 12;
     position: relative;
     animation: deslocacao-in-2 2.5s;
-}
-.sign-in-js .second-content .second-column{
     z-index: 12;
+}
+/*Boas Vindas - aparece*/
+.sign-in-js .second-content .second-column{
     position: relative;
     animation: deslocacao-in-3 2.5s;
+    z-index: 12;
 }
-
+/*Novo por aqui - desaparece*/
 .sign-up-js .second-content .first-column{
     position: relative;
     animation: deslocacao-out 2.5s;
+    z-index: -1;
 }
 
+/*Boas vindas - desaparace*/
 .sign-up-js .second-content .second-column{
     position: relative;
     animation: deslocacao-out-2 2.5s;
+    z-index: -1;
+}
+/*Criar conta - aparece*/
+.sign-up-js .first-content .second-column{
+    position: relative;
+    animation: deslocacao-out-3 2.5s;
+    z-index: 14;
+}
+/*Bem vindo de volta - aparece*/
+.sign-up-js .first-content .first-column{
+    position: relative;
+    animation: deslocacao-out-4 2.5s;
+    z-index: 14;
 }
 /*Animação*/
 @keyframes slidein{
@@ -285,17 +298,12 @@ form input{
 @keyframes deslocacao-in{
 
     from{
-        left: 0%;        
         z-index: 12;
         opacity: 1;
-    }50%{
-        left: -20%;
+    }40%{
+        z-index: 12;
         opacity: 0;
-    }55%{        
-        
-    }
-    to{
-        left: -80%;
+    }to{
         z-index: -1;    
         opacity: 0;   
     }
@@ -303,44 +311,38 @@ form input{
 @keyframes deslocacao-in-2{
 
     from{
-        left: -150%;
-        opacity: 0;
+        left: -550px;
+        opacity: 0%;
         z-index: -1;
-    }46%{
-        
-        opacity: 1;
+    }40%{        
+        opacity: 50%;
         z-index: 12;
-        
     }to{
-        left: 0%;
+        left: 0px;
         z-index: 12;
-        opacity: 1;
+        opacity: 100%;
     }
 }
 @keyframes deslocacao-in-3{
-
     from{
-        left: 40%;
         z-index: -1;
-        opacity: 0;
-    }90%{
-        opacity: 1;
-    }
-    to{
-        left: 0%;
+        opacity: 0%;
+    }80%{
+        opacity: 0%;
         z-index: 12;
-        opacity: 1;
+    }to{
+        z-index: 12;
+        opacity: 100%;
     }
 }
 @keyframes deslocacao-in-4{
-
     from{
-        left: 0%;
+        left: 0px;
         z-index: 14;
     }50%{
         z-index: 14;
     }to{
-        left: 100%;
+        left: 550px;
         opacity: 0;
         z-index: -1;
     }
@@ -348,33 +350,57 @@ form input{
 @keyframes deslocacao-out{
 
     from{
-        left: 0%;
-        opacity: 1;
+        left: 0px;
+        opacity: 100%;
         z-index: 14;
-    }84%{
-        
-        opacity: 0;
-        z-index: -1;
-        
+    }80%{
+       z-index: 14;
+       opacity: 60%;
     }to{
-        left: -150%;
+        left: -550px;
         z-index: -1;
-        opacity: 0;
+        opacity: 0%;
     }
 }
 @keyframes deslocacao-out-2{
 
     from{
-        left: 0%;
         z-index: 14;
-        opacity: 1;
+        opacity: 100%;
     }80%{
         z-index: -1;
-        opacity: 0;
+        opacity: 0%;
     }
     to{
-        left: 40%;
         z-index: -1;
-        opacity: 0;
+        opacity: 0%;
+    }
+}
+@keyframes deslocacao-out-3{
+
+    from{
+        z-index: -1;
+        opacity: 0%;
+    }99%{
+        z-index: 11;
+        opacity: 90%;
+    }
+    to{
+        z-index: 14;
+        opacity: 100%;
+    }
+}
+@keyframes deslocacao-out-4{
+    from{
+        left: 500px;
+        opacity: 0%;
+        z-index: -1;
+    }40%{
+        opacity: 50%;
+        z-index: 14;
+    }to{
+        left: 0px;
+        opacity: 100%;
+        z-index: 14;
     }
 }
