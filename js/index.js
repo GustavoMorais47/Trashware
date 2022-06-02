@@ -7,7 +7,6 @@ function scrollFunction(){
     }else{
         backTop.style.display = "none";
     }
-    console.log("Text "+window.pageYOffset);
 }
 backTop.addEventListener("click",function(){
     window.scroll(0,0);

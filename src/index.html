@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Trashware</title>
+
+        <link rel="icon" href="http://localhost:8080/logo-icon.png">        
+        <link rel="stylesheet" href="http://localhost:8080/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        <link rel="stylesheet" href="http://localhost:8080/index.css">
+       
+        <script src="https://kit.fontawesome.com/cdbad79848.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <!--Cabeçalho-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                  <a class="navbar-brand" href="/">
+                    <img class="logo" src="http://localhost:8080/logo.png"alt="Logo">
+                  </a>
+                  <form class="d-flex" role="search" style="margin-left: 25px;">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" style="width: 400px;">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                  </form>                  
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" id="itemMenu" aria-current="page" href="/login"><span style="font-weight:bold">Entrar</span> ou <span style="font-weight: bold;">Criar conta</span></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="itemMenu" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="http://localhost:8080/user.png" style="margin: 5px;display: inline-flex;" width="" height="20px">
+                          Usuário
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">                          
+                          <li><a class="dropdown-item selector" href="/compras">Compras</a></li>
+                          <li><a class="dropdown-item selector" href="/vender">Vender</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item selector" href="/minha-conta">Minha conta</a></li>
+                          <li><a class="dropdown-item selector" href="/config">Configurações</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item selector" href="#">Sair</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>              
+                </div>
+            </nav>
+            <nav class="categorias">
+                <div>
+                    <ul>
+                        <a href="/categoria"><li>Computadores</li></a>
+                        <a href="/categoria"><li>Controles</li></a>
+                        <a href="/categoria"><li>Eletrodomésticos</li></a>
+                        <a href="/categoria"><li>Fones</li></a>
+                        <a href="/categoria"><li>Impressoras</li></a>
+                        <a href="/categoria"><li>Notebooks</li></a>
+                        <a href="/categoria"><li>Tablets</li></a>
+                        <a href="/categoria"><li>Teclado e Mouse</li></a>
+                        <a href="/categoria"><li>Telefone</li></a>
+                        <a href="/categoria"><li>Televisão</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--Fim do Cabeçalho-->
+        <section>
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item  active">
+                <img src="http://localhost:8080/Apresentacao.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="http://localhost:8080/Risco-Cancer-G1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Pesquisa</h5>
+                  <a style="text-decoration:overline;color: #fff; font-style: italic;" target="_blank" href="https://g1.globo.com/sp/santos-regiao/educacao/noticia/2019/06/15/descarte-incorreto-de-lixo-eletronico-traz-risco-de-cancer-e-problemas-ambientais.ghtml"><p>Fonte: g1.globo.com <img src="https://s2.glbimg.com/t2_E-_cSErv4fsbUVhwwEN0YMX0=/32x32/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/H/w/YbA657S3aYVfC0P9wboQ/g1-favicon.png" width="20px" height=""></p></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="http://localhost:8080/Composicao-lixo-eletronico.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Pesquisa</h5>
+                  <a style="text-decoration:overline;color: #fff; font-style: italic;" target="_blank" href="http://sucatas.com/portal/reciclagem/mat_didatico_view/311-Composicao-do-Lixo-Eletronico-0"><p>Fonte: sucatas.com <img src="http://sucatas.com/portal/img/logo-sucatas.png" width="20px" height=""></p></a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <button id="goTop" type="button"><i class="fa-solid fa-arrow-up"></i></button>  
+        <!--Rodapé-->
+        <footer>
+          <div class="rodape">
+            <div class="div-logo">
+              <img class="logo-rodape" src="http://localhost:8080/logo-120-68.png"alt="Logo">
+            </div>
+            <div class="div-menu">
+              <ul class="menu-rodape">
+                <a href="/termos-condicoes"><li>Termos e Condições</li></a>
+                <a href="/sobre"><li>Sobre</li></a>
+                <a href="/contato"><li>Contato</li></a>
+                <a href="/suporte"><li>Suporte</li></a>
+              </ul>
+            </div>
+          </div>          
+          <div class="copyright">
+            <p style="margin: 0;">Copyright© 2022</p>
+          </div>
+        </footer>
+        <!--Fim do Rodapé-->
+        <script src="http://localhost:8080/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="http://localhost:8080/bootstrap.min.js"></script>
+        <script src="http://localhost:8080/index.js"></script>
+    </body>
+</html>

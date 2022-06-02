@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login | Trashware</title>
+        <link rel="icon" href="http://localhost:8080/logo-icon.png">
+        <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+        <link rel="stylesheet" href="http://localhost:8080/login.css">
+        <script src="https://kit.fontawesome.com/cdbad79848.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-logo">
+            <a href="/"><img class="logo" src="http://localhost:8080/logo.png"></a>
+        </div>
+        <div class="container">                     
+            <div class="content first-content">
+                <div class="first-column">
+                    <h2 class="title title-primary">Boas-Vindas de volta!</h2>
+                    <p class="description description-primary">Para se manter conectado(a)</p>
+                    <p class="description description-primary">faça o login com suas informações!</p>
+                    <button id="entrar" class="btn btn-primary">Entrar</button>
+                </div>
+                <div class="second-column">
+                    <h2 class="title title-second">Criar conta</h2>
+                    <div class="social-media">
+                        <ul class="list-social-media">
+                            <a class="link-social-media" href="#"><li class="item-social-media"><i class="fa-brands fa-facebook-f"></i></li></a>
+                            <a class="link-social-media" href="#"><li class="item-social-media"><i class="fa-brands fa-google-plus-g"></i></li></a>
+                            <a class="link-social-media" href="#"><li class="item-social-media"><i class="fa-brands fa-linkedin-in"></i></li></a>
+                        </ul>
+                    </div>
+                    <p class="description description-second">Ou utilize seu e-mail</p>
+                    <form class="form" method="post">
+                        <label class="label-input">
+                            <i class="fa-solid fa-user icon-modify"></i>
+                            <input type="text" name="rg-login" placeholder="Nome completo">
+                        </label>
+                        <label class="label-input">
+                            <i class="fa-solid fa-at icon-modify"></i>
+                            <input type="email" name="rg-email" placeholder="E-mail">
+                        </label>
+                        <label class="label-input">
+                            <i class="fa-solid fa-lock icon-modify"></i>
+                            <input type="password" name="rg-password" placeholder="Senha">
+                        </label>
+                        <label class="label-input">
+                            <i class="fa-solid fa-lock icon-modify"></i>
+                            <input type="password" name="rg-con-password" placeholder="Confirmar senha">
+                        </label> 
+                        <button class="btn btn-second" type="submit" name="registro">Registrar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="content second-content">
+                <div class="first-column">
+                    <h2 class="title title-primary">Olá, é novo(a) por aqui?</h2>
+                    <p class="description description-primary">Para acessar nossa plataforma</p>
+                    <p class="description description-primary">realize o seu cadastro</p>
+                    <button id="criar" class="btn btn-primary">Criar conta</button>
+                </div>
+                <div class="second-column">
+                    <h2 class="title title-second">Boas-Vindas!</h2>
+                    <div class="social-media">
+                        <ul class="list-social-media">
+                            <a class="link-social-media" href="#"><li class="item-social-media"><i class="fa-brands fa-facebook-f"></i></li></a>
+                            <a class="link-social-media" href="#"><li class="item-social-media"><i class="fa-brands fa-google-plus-g"></i></li></a>
+                            <a class="link-social-media" href="#"><li class="item-social-media"><i class="fa-brands fa-linkedin-in"></i></li></a>
+                        </ul>
+                    </div>
+                    <p class="description description-second">Ou utilize seu e-mail</p>
+                    <form class="form" method="post">
+                        <label class="label-input">
+                            <i class="fa-solid fa-at icon-modify"></i>
+                            <input type="email" name="lg-login" placeholder="E-mail">
+                        </label>
+                        <label class="label-input">
+                            <i class="fa-solid fa-lock icon-modify"></i>
+                            <input type="password" name="lg-password" placeholder="Senha">
+                        </label>
+                        <a class="password" href="#">Esqueceu a sua senha?</a>
+                        <button class="btn btn-second" type="submit">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="http://localhost:8080/jquery.min.js"></script>
+        <script src="http://localhost:8080/login.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="http://localhost:8080/bootstrap.min.js"></script>
+    </body>
+</html>

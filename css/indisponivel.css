@@ -1,0 +1,91 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-color: #F2F2F2;
+}
+/*===============Cabeçalho================*/
+header .logo{
+    width: 120px;
+    height: 69px; 
+    transition: transform 1s;
+}
+header .logo:hover{
+    transform: scale(1.05);
+}
+header #itemMenu{
+    color: #095d40;
+}
+header #itemMenu:hover{
+    color: #16a637;
+    border-bottom:#16a637 1px solid;
+}
+header #itemMenu:active{
+    color: #16a637;
+    border-bottom:#16a637 1px solid;
+}
+header .selector:hover{
+    font-weight: bold;
+    color: #16a637;
+    background-color: transparent;
+}
+header .categorias{
+    z-index: 9;
+    background-color: #095d40;
+    color: #fff;    
+}
+header .categorias a{
+    text-decoration: none;
+    color: #fff;
+}
+header .categorias div{
+    text-align: center;
+}
+header .categorias ul{
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 0px;
+}
+header .categorias li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+header .categorias li:hover{
+    
+    background-color: #16a637;
+}
+/*===============Body================*/
+.container-ind{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 77vh;
+    color: #095d40; 
+}
+.icon{
+    color: #095d40; 
+    font-size: 100px;    
+    animation: girar 5s linear infinite;
+}
+.titulo{
+    padding-top: 10px;
+}
+@keyframes girar{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
