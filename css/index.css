@@ -106,15 +106,16 @@ footer{
 }
 .menu-rodape{
     list-style: none;  
-    margin: 25px; 
-    padding: 0cd ;
+    margin: 15px;
+    margin-left: 25px; 
+    padding: 0px;
 }
 .menu-rodape li{
     display: inline;
     position: relative;
     margin-right: 10px;
 
-    font-weight: bold;
+    font-weight:300;
     color: #04261A;
     font-size:medium;
 }
@@ -123,22 +124,49 @@ footer{
 }
 .menu-rodape li:hover{
     color: #16a637;
+    border-bottom: 2px solid #16a637;
+    border-radius: 1px;
 }
 .copyright{
     margin: 0;
-    background-color: #F0F7FA;
     color: black;
     text-align: center;
     font-size: small;
     font-weight: 600;
 }
-.div-logo{
-
-}
 .logo-rodape{
-    width: 120px;
-    height: 68px;
+    width: 80px;
+    height: 46px;
 }
 .copyright p{
     padding: 5px;
+}
+.social-media{
+    margin: 1rem 0;
+}
+.list-social-media{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.item-social-media{
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    transition: background-color 0.6s;    
+}
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+.link-social-media {
+    color: #CCCCCC;
+}
+.item-social-media:hover{
+    color: #fff;
+    border: 0px;
+    background-color:#095d40;
 }
