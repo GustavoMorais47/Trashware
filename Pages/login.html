@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Login | Trashware</title>
-        <link rel="icon" href="http://localhost:8080/logo-icon.png">
+        <link rel="icon" href="http://localhost:3000/static/logo-icon.png">
         <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-        <link rel="stylesheet" href="http://localhost:8080/login.css">
+        <link rel="stylesheet" href="http://localhost:3000/static/login.css">
         <script src="https://kit.fontawesome.com/cdbad79848.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container-logo">
-            <a href="/"><img class="logo" src="http://localhost:8080/logo.png"></a>
+            <a href="/"><img class="logo" src="http://localhost:3000/static/logo.png"></a>
         </div>
         <div class="container">                     
             <div class="content first-content">
@@ -20,7 +20,7 @@
                     <p class="description description-primary">faça o login com suas informações!</p>
                     <button id="entrar" class="btn btn-primary">Entrar</button>
                 </div>
-                <div class="second-column">
+                <div class="second-column" style="padding-top: 50px;">
                     <h2 class="title title-second">Criar conta</h2>
                     <div class="social-media">
                         <ul class="list-social-media">
@@ -30,24 +30,20 @@
                         </ul>
                     </div>
                     <p class="description description-second">Ou utilize seu e-mail</p>
-                    <form class="form" method="post">
+                    <form class="form" method="POST" action="/api/cadastro">
                         <label class="label-input">
                             <i class="fa-solid fa-user icon-modify"></i>
-                            <input type="text" name="rg-login" placeholder="Nome completo">
+                            <input type="text" name="rgNome" placeholder="Nome completo">
                         </label>
                         <label class="label-input">
                             <i class="fa-solid fa-at icon-modify"></i>
-                            <input type="email" name="rg-email" placeholder="E-mail">
+                            <input type="email" name="rgEmail" placeholder="E-mail">
                         </label>
                         <label class="label-input">
                             <i class="fa-solid fa-lock icon-modify"></i>
-                            <input type="password" name="rg-password" placeholder="Senha">
+                            <input type="password" name="rgPassword" placeholder="Senha">
                         </label>
-                        <label class="label-input">
-                            <i class="fa-solid fa-lock icon-modify"></i>
-                            <input type="password" name="rg-con-password" placeholder="Confirmar senha">
-                        </label> 
-                        <button class="btn btn-second" type="submit" name="registro">Registrar</button>
+                        <button class="btn btn-second" type="submit">Registrar</button>
                     </form>
                 </div>
             </div>
@@ -68,24 +64,23 @@
                         </ul>
                     </div>
                     <p class="description description-second">Ou utilize seu e-mail</p>
-                    <form class="form" method="post">
+                    <form class="form" method="POST" action="/api/login">
                         <label class="label-input">
                             <i class="fa-solid fa-at icon-modify"></i>
-                            <input type="email" name="lg-login" placeholder="E-mail">
+                            <input type="email" name="Email" placeholder="E-mail">
                         </label>
                         <label class="label-input">
                             <i class="fa-solid fa-lock icon-modify"></i>
-                            <input type="password" name="lg-password" placeholder="Senha">
+                            <input type="password" name="Senha" placeholder="Senha">
                         </label>
-                        <a class="password" href="#">Esqueceu a sua senha?</a>
                         <button class="btn btn-second" type="submit">Entrar</button>
                     </form>
                 </div>
             </div>
         </div>
-        <script src="http://localhost:8080/jquery.min.js"></script>
-        <script src="http://localhost:8080/login.js"></script>
+        <script src="http://localhost:3000/static/jquery.min.js"></script>
+        <script src="http://localhost:3000/static/login.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="http://localhost:8080/bootstrap.min.js"></script>
+        <script src="http://localhost:3000/static/bootstrap.min.js"></script>
     </body>
 </html>

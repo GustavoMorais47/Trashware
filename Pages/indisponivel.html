@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Trashware</title>
+
+  <link rel="icon" href="http://localhost:3000/static/logo-icon.png">
+  <link rel="stylesheet" href="http://localhost:3000/static/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <link rel="stylesheet" href="http://localhost:3000/static/indisponivel.css">
+
+  <script src="https://kit.fontawesome.com/cdbad79848.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Cabeçalho-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img class="logo" src="http://localhost:3000/static/logo.png" alt="Logo">
+        </a>
+        <form class="d-flex" role="search" style="margin-left: 25px;">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"
+            style="width: 400px;">
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item" id="BtnLogin" name="BtnLogin">
+              <a class="nav-link" id="itemMenu" aria-current="page" href="/authentication"><span
+                  style="font-weight:bold">Entrar</span> ou <span style="font-weight: bold;">Criar conta</span></a>
+            </li>
+            <li class="nav-item dropdown" id="MenuUser" name="MenuUser">
+              <a class="nav-link dropdown-toggle" id="itemMenu" name="itemMenu" href="#" id="navbarScrollingDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="http://localhost:3000/static/user.png" style="margin: 5px;display: inline-flex;" width=""
+                  height="20px">
+                <span class="TextUser" id="TextUser"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item selector" href="/compras">Compras</a></li>
+                <li><a class="dropdown-item selector" href="/vender">Vender</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item selector" href="/minha-conta">Minha conta</a></li>
+                <li><a class="dropdown-item selector" href="/config">Configurações</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item selector" href="#">Sair</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="categorias">
+      <div>
+        <ul>
+          <a href="/categoria">
+            <li>Computadores</li>
+          </a>
+          <a href="/categoria">
+            <li>Controles</li>
+          </a>
+          <a href="/categoria">
+            <li>Eletrodomésticos</li>
+          </a>
+          <a href="/categoria">
+            <li>Fones</li>
+          </a>
+          <a href="/categoria">
+            <li>Impressoras</li>
+          </a>
+          <a href="/categoria">
+            <li>Notebooks</li>
+          </a>
+          <a href="/categoria">
+            <li>Tablets</li>
+          </a>
+          <a href="/categoria">
+            <li>Teclado e Mouse</li>
+          </a>
+          <a href="/categoria">
+            <li>Telefone</li>
+          </a>
+          <a href="/categoria">
+            <li>Televisão</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--Fim do Cabeçalho-->
+  <div class="container-ind">
+    <i class="fa-solid fa-gear icon"></i>
+    <h2 class="titulo">Em construção</h2>
+    <p>Ops! Atualmente está página não se encontra disponível.</p>
+  </div>
+  <!--Rodapé-->
+  <footer>
+    <div class="rodape">
+      <div>
+        <img class="logo-rodape" src="http://localhost:3000/static/logo-120-68.png" alt="Logo">
+      </div>
+      <div class="div-menu">
+        <ul class="menu-rodape">
+          <a href="/termos-condicoes">
+            <li>Termos e Condições</li>
+          </a>
+          <a href="/sobre">
+            <li>Sobre</li>
+          </a>
+          <a href="/contato">
+            <li>Contato</li>
+          </a>
+          <a href="/suporte">
+            <li>Suporte</li>
+          </a>
+        </ul>
+      </div>
+      <div class="social-media">
+        <ul class="list-social-media">
+          <a class="link-social-media" href="#">
+            <li class="item-social-media"><i class="fa-brands fa-facebook-f"></i></li>
+          </a>
+          <a class="link-social-media" href="#">
+            <li class="item-social-media"><i class="fa-brands fa-instagram"></i></li>
+          </a>
+          <a class="link-social-media" href="#">
+            <li class="item-social-media"><i class="fa-brands fa-twitter"></i></li>
+          </a>
+          <a class="link-social-media" href="#">
+            <li class="item-social-media"><i class="fa-brands fa-linkedin"></i></li>
+          </a>
+          <a class="link-social-media" href="#">
+            <li class="item-social-media"><i class="fa-brands fa-youtube"></i></li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p style="margin: 0;">Copyright© 2022</p>
+    </div>
+  </footer>
+  <!--Fim do Rodapé-->
+  <script src="http://localhost:3000/static/jquery.min.js"></script>
+  <script src="http://localhost:3000/static/insdisponivel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="http://localhost:3000/static/bootstrap.min.js"></script>
+</body>
+
+</html>
