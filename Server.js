@@ -64,7 +64,7 @@ app.post('/api/cadastro',function(req,res){
     //retorna sucesso
   }).catch(function(erro){
     //retorna falha
-  })*/
+  })*/ 
 })
 app.post('/api/login',function(req,res){
   console.log(req.body)
